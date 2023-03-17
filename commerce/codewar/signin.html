@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Sign In</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<h2>User Sign In</h2>
-				<form>
-					<div class="form-group">
-						<label for="email">Email address:</label>
-						<input type="email" class="form-control" id="email">
-					</div>
-					<div class="form-group">
-						<label for="pwd">Password:</label>
-						<input type="password" class="form-control" id="pwd">
-					</div>
-					<div class="checkbox">
-						<label><input type="checkbox"> Remember me</label>
-					</div>
-					<button onclick="location.href='page1.html'">Sign in as a user</button>
-				</form>
-			</div>
-			<div class="col-md-6">
-				<h2>Vendor Sign In</h2>
-				<form>
-					<div class="form-group">
-						<label for="email">Email address:</label>
-						<input type="email" class="form-control" id="email">
-					</div>
-					<div class="form-group">
-						<label for="pwd">Password:</label>
-						<input type="password" class="form-control" id="pwd">
-					</div>
-					<div class="checkbox">
-						<label><input type="checkbox"> Remember me</label>
-					</div>
-					<button onclick="location.href='page2.html'">Sign in as a vendor</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>User Sign In</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button onclick="location.href='page1.html'">Sign in as a user</button>
+                    <div>
+                        <form action="php/uregistration.php" method="get">
+                            <button>Register as a user</button>
+                        </form>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Vendor Sign In</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button onclick="location.href='page2.html'">Sign in as a vendor</button>
+                    <div>
+                        <form action="php/vregistration.php" method="get">
+                            <button>Register as a Vendor</button>
+                        </form>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
